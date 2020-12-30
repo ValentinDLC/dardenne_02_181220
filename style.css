@@ -1,0 +1,183 @@
+body {
+  font-family: "Raleway" , "Sans serif";
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+}
+
+.headerNavlink {
+  font-weight: 400;
+  padding: 2em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.headerImg {
+  width: 115px;
+  height: 60px;
+}
+.headerSignup {
+  padding: 2em;
+  color: blue;
+  font-weight: 700;
+}
+
+.searchFormIconbox {
+  padding: 1em;
+  background-color: #F2F2F2;
+  border-radius: 1em 0em 0em 1em;
+}
+
+.searchFormInserttext {
+  padding: 1em 3em;
+  border: none;
+  width: 16em;
+  font-size: medium;
+  font-weight: 700;
+  font-family: 'Raleway';
+}
+.searchFormInsertbutton {
+  padding: 1em 1em;
+  background-color: #0065FC;
+  border: none;
+  color: white;
+  font-family: 'Raleway';
+  border-radius: 0 1em 1em 0em;
+  font-weight: 700;
+}
+.searchFilters {
+  display: flex ;
+}
+.searchFiltersTitle {
+  margin-right: 1em;
+}
+
+.searchFiltersBox {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+  border: 2px solid #d9d9d9;
+  border-radius: 2em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.searchFiltersIconbox  {
+  display: flex;
+  color: #0000FF;
+  background-color: #DEEBFF;
+  width: 3.2em;
+  height: 3.2em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  margin: -2;
+}
+
+.searchFiltersText {
+  margin: 0em 1em;
+}
+
+.searchResultBox {
+  display: flex;
+  align-items: center;
+}
+
+.searchResultIconbox {
+  color: #0000ff;
+  border: solid 1px #d9d9d9;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+.fas {
+  color:#0000FF
+}
+
+.Hosting {
+  display: flex;
+}
+.CatalogTop {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em;
+  margin: 20;
+  border-radius: 1.5em;
+  box-shadow: 0 0 20px #0000002e;
+  cursor: pointer;
+  background-color: white;
+  width: 210px;
+}
+.Catalogpicdimension {
+  width: 209px;
+  height: 110px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.HostingMarseille .catalog , .Container {
+  border-radius: 1.5em;
+  padding: 2em;
+  background-color: #767e8233;
+}
+
+.HostingMarseille , .catalog {
+  display: block;
+  background-color: #767e8233;
+  height: 650px;
+  width: 870px;
+  border-radius: 2em 2em;
+}
+
+.Container {
+  display: flex;
+  position: relative;
+  width: 310px;
+}
+
+.MostPopularHostingdimension {
+  width: 130px;
+  height: 110px;
+  border-radius: 1em 0 0 1em;
+}
+
+.MostPopularHosting {
+  display: flex;
+  position: relative;
+  padding: 0.5em;
+  box-shadow: 0 0 20px #0000002e;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1em;
+}
+
+.MostPopularHostingText {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+.ActivityCatalogBoxa {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  box-shadow: 0 0 20px #0000002e;
+  width: 330px;
+  height: 410px;
+}
