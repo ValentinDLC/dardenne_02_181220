@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.bloc-page {
+  width: 1360px;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -111,49 +116,52 @@ a {
   color:#0000FF
 }
 
+.Header , .Middle {
+  margin-left: 3em;
+}
+
 .Hosting {
   display: flex;
 }
 .CatalogTop {
   display: inline-block;
-  position: relative;
-  padding: 0.5em;
-  margin: 20;
+  padding: 6px;
+  margin: 18px;
   border-radius: 1.5em;
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
   background-color: white;
-  width: 210px;
+  width: 220px;
+  margin-top: 40px;
 }
 .Catalogpicdimension {
-  width: 209px;
-  height: 110px;
+  width: 219px;
+  height: 100px;
   border-radius: 1rem 1rem 0 0;
 }
 
-.HostingMarseille .catalog , .Container {
+.Container {
   border-radius: 1.5em;
   padding: 2em;
-  background-color: #767e8233;
 }
-
-.HostingMarseille , .catalog {
+.HostingMarseille {
   display: block;
   background-color: #767e8233;
   height: 650px;
-  width: 870px;
+  width: 880px;
   border-radius: 2em 2em;
+  margin-right: 20px;
 }
 
 .Container {
   display: flex;
   position: relative;
-  width: 310px;
+  width: 340px;
 }
 
 .MostPopularHostingdimension {
-  width: 130px;
-  height: 110px;
+  width: 150px;
+  height: 130px;
   border-radius: 1em 0 0 1em;
 }
 
@@ -165,19 +173,112 @@ a {
   cursor: pointer;
   background-color: white;
   border-radius: 1em;
+  margin-top: 25px;
 }
 
 .MostPopularHostingText {
   display: flex;
   flex-direction: column;
-  margin-top: -20px;
+  margin: -25px 0 0 10px;
 }
 
-.ActivityCatalogBoxa {
+.Activity {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .ActivityCatalogBox {
+    border-radius: 1em;
+    box-shadow: 0 0 15px #0000002e;
+}
+
+.ActivityCatalogBoxImga {
+  border-radius: 1em 1em 0 0;
+  width: 270px;
+  height: 310px;
+}
+.ActivityCatalogBoxImgb {
+  border-radius: 1em 1em 0 0;
+  width: 330px;
+  height: 140px;
+}
+
+.ActivityCatalogBoxImgc {
+  border-radius: 1em 1em 0 0;
+  width: 335px;
+  height: 110px
+}
+
+.ActivityCatalogBoxImgd {
+  border-radius: 1em 1em 0 0;
+  width: 270px;
+  height: 310px;
+}
+
+.ActivityCatalogBoxImge {
+  border-radius: 1em 1em 0 0;
+  width: 259px;
+  height: 120px;
+}
+
+.ActivityCatalogBoxImgf {
+  border-radius: 1em 1em 0 0;
+  width: 250px;
+  height: 130px;
+}
+
+.activitycataloga {
+  margin-right: 20px;
+  margin-top: 60px;
+  margin-left: -180px;
+}
+
+.activitycatalogb {
+  margin-right: 30px;
+  margin-top: 60;
+  margin-left: -5;
+}
+
+.activitycatalogc {
+  margin-right: 20px;
+  margin-top: 260px;
+  margin-left: -364px;
+}
+
+.activitycatalogd {
+  margin-right: 30px;
+  margin-top: 60;
+  margin-left: -10px;
+}
+
+.activitycataloge {
+  margin-right: 30px;
+  margin-top: 60px;
+  margin-left: -10px;
+}
+
+.activitycatalogf {
+  margin-right: 30px;
+  margin-top: 240px;
+  margin-left: -290px;
+}
+
+.anion {
+  background-color: #F2F2F2;
+}
+
+.anionBox {
+  display: flex;
+}
+
+.anionBoxColumn {
   display: flex;
   flex-direction: column;
-  border-radius: 1em;
-  box-shadow: 0 0 20px #0000002e;
-  width: 330px;
-  height: 410px;
+  width: 40%;
+  padding: 1em 1em;
+}
+
+.anionBoxColumnLink {
+  display: flex;
+  margin: 7px 0;
 }
