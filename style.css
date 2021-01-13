@@ -4,11 +4,7 @@ body {
 }
 
 .bloc-page {
-<<<<<<< Updated upstream
-  width: 1360px;
-=======
-  width: 1240px;
->>>>>>> Stashed changes
+  width: 1252.5px;
   margin: 0 auto;
 }
 
@@ -16,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 4em;
-  max-width: 1260px;
+  max-width: 1060px;
 }
 
 .headerNav {
@@ -25,8 +21,24 @@ body {
 }
 
 .headerNavlink {
-  font-weight: 400;
-  padding: 2em;
+  font-weight: 500;
+  padding: 1.3em;
+}
+
+.headerNavLink[data-active=true] {
+  color: #0065FC;
+}
+.headerNavLink:hover {
+  color: #0065FC;
+}
+
+@media screen and (min-width:426px) {
+  .headerNavLink[data-active=true] {
+    border-top: 3px solid #0065FC;
+  }
+  .headerNavLink:hover {
+    border-top: 3px solid #0065FC;
+  }
 }
 
 a {
@@ -40,37 +52,48 @@ a {
   margin-right: 67%;
 }
 .headerSignup {
-  padding: 2em;
+  padding: 1.4em;
   color: blue;
   font-weight: 700;
 }
 
+
+.Searchform {
+  display: flex;
+  width: 348px;
+  border: solid 1px #F2F2F2;
+  border-radius: 1em;
+}
 .searchFormIconbox {
-  padding: 1em;
+  padding: 20px;
   background-color: #F2F2F2;
   border-radius: 1em 0em 0em 1em;
 }
 
+
 .searchFormInserttext {
-  padding: 1em 3em;
+  padding: 1em 1em;
   border: none;
   width: 16em;
   font-size: medium;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Raleway';
 }
 .searchFormInsertbutton {
-  padding: 1em 1em;
+  padding: 0em 1em;
   background-color: #0065FC;
   border: none;
   color: white;
   font-family: 'Raleway';
-  border-radius: 0 1em 1em 0em;
+  border-radius: 0 1em 1em 0;
   font-weight: 700;
+  font-size: large;
 }
+
 .searchFilters {
   display: flex ;
   flex-flow: wrap;
+  padding-top: 30px;
 }
 .searchFiltersTitle {
   margin-right: 1em;
@@ -89,7 +112,7 @@ a {
 
 .searchFiltersIconbox  {
   display: flex;
-  color: #0000FF;
+  color:  #0065FC;
   background-color: #DEEBFF;
   width: 3.2em;
   height: 3.2em;
@@ -97,6 +120,12 @@ a {
   align-items: center;
   border-radius: 2em;
   margin: -2;
+}
+
+@media screen and (min-width:426px) {
+  .searchFormInsertIcon {
+    display: none !important;
+  }
 }
 
 .searchFiltersText {
@@ -109,7 +138,7 @@ a {
 }
 
 .searchResultIconbox {
-  color: #0000ff;
+  color:  #0065FC;
   border: solid 1px #d9d9d9;
   height: 2em;
   width: 2em;
@@ -119,12 +148,9 @@ a {
   align-items: center;
   margin-right: 1em;
 }
-.fas {
-  color:#0000FF
-}
 
-.Header , .Middle {
-  margin-left: 3em;
+.Header, .Middle {
+  margin-left: 29px;
 }
 
 .Hosting {
@@ -138,46 +164,95 @@ a {
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
   background-color: white;
-  width: 220px;
-  margin-top: 40px;
+  width: 227px;
+  margin-top: 10px;
 }
 .Catalogpicdimension {
-  width: 219px;
-  height: 100px;
-  border-radius: 1rem 1rem 0 0;
+  width: 227px;
+  height: 120px;
+  border-radius: 1em 1em 0 0;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-.Container {
-  border-radius: 1.5em;
-  padding: 2em;
+.catalogpicLegend {
+  display: flex;
+  flex-direction: column;
+  margin: -13px 15px 2px;
 }
+
+.marginTop {
+  margin-top: -15px;
+}
+
 .HostingMarseille {
   display: block;
   background-color: #767e8233;
-  height: 650px;
+  height: 620px;
   width: 880px;
   border-radius: 2em 2em;
   margin-right: 20px;
 }
 
+.mostPopularTitle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hostingMarseilleTitle {
+  margin-left: 7px;
+}
+
+.hostingMarseillePrice {
+  margin-top: -16px;
+}
+
+.HostingMarseilleStarPop {
+  margin-top: 40px;
+}
+
 .Container {
   display: flex;
   position: relative;
+  border-radius: 1.5em;
+  padding: 15px;
   width: 340px;
-<<<<<<< Updated upstream
-=======
+  height: 590px;
+  float: right;
+  background-color: #767e8233;
+}
+
+.colorIconStarBlue  {
+  color: #0065FC;
+}
+.colorIconStarWhite  {
+  color: rgb(241, 212, 212);
+}
+
+.fas fa-chart-line right {
   float: right;
 }
 
-.fas fa-chart-line {
-  float: right;
->>>>>>> Stashed changes
+.hostingMarseilleNext {
+  display: flex;
+  margin-left : 25px;
+  margin-top: 25px;
+}
+
+.block {
+  margin-left: 30px;
+}
+.Iconline {
+  color: black;
+  margin-left: 40px;
 }
 
 .MostPopularHostingdimension {
-  width: 150px;
+  width: 132px;
   height: 130px;
   border-radius: 1em 0 0 1em;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .MostPopularHosting {
@@ -194,7 +269,7 @@ a {
 .MostPopularHostingText {
   display: flex;
   flex-direction: column;
-  margin: -25px 0 0 10px;
+  margin: -20px 0 0 20px;
 }
 
 .Activity {
@@ -210,36 +285,48 @@ a {
 .ActivityCatalogBoxImga {
   border-radius: 1em 1em 0 0;
   width: 270px;
-  height: 310px;
+  height: 370px;
+  object-fit: cover;
+  overflow: hidden;
 }
 .ActivityCatalogBoxImgb {
   border-radius: 1em 1em 0 0;
-  width: 330px;
-  height: 140px;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .ActivityCatalogBoxImgc {
   border-radius: 1em 1em 0 0;
-  width: 335px;
-  height: 110px
+  width: 270px;
+  height: 100px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .ActivityCatalogBoxImgd {
   border-radius: 1em 1em 0 0;
-  width: 270px;
-  height: 310px;
+  width: 280px;
+  height: 370px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .ActivityCatalogBoxImge {
   border-radius: 1em 1em 0 0;
-  width: 259px;
-  height: 120px;
+  width: 270px;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .ActivityCatalogBoxImgf {
   border-radius: 1em 1em 0 0;
-  width: 250px;
+  width: 270px;
   height: 130px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .activitycataloga {
@@ -250,32 +337,39 @@ a {
 
 .activitycatalogb {
   margin-right: 30px;
-  margin-top: 60;
-  margin-left: -5;
+  margin-top: 60px;
+  margin-left: 5px;
 }
 
 .activitycatalogc {
   margin-right: 20px;
-  margin-top: 260px;
-  margin-left: -364px;
+  margin-top: 330px;
+  margin-left: -300px;;
 }
 
 .activitycatalogd {
   margin-right: 30px;
-  margin-top: 60;
-  margin-left: -10px;
+  margin-top: 60px;
+  margin-left: 5px;
 }
 
 .activitycataloge {
   margin-right: 30px;
   margin-top: 60px;
-  margin-left: -10px;
+  margin-left: -5px;
 }
 
 .activitycatalogf {
   margin-right: 30px;
-  margin-top: 240px;
-  margin-left: -290px;
+  margin-top: 300px;
+  margin-left: -300px;
+}
+
+.ActivityCatalogLegend {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.2em 1.5em 3em 1em;
+  padding: 10px;
 }
 
 .anion {
@@ -296,52 +390,169 @@ a {
 .anionBoxColumnLink {
   display: flex;
   margin: 7px 0;
-<<<<<<< Updated upstream
-=======
 }
-@media screen and (min-width:320px) and (max-width:425px) {
+
+
+@media screen and (min-width:320px) and (max-width:426px) {
   .bloc-page {
     display: flow-root;
     max-width: 425px;
     overflow: hidden;
   }
+
   .header {
     display: contents ;
   }
 
-  .headerNav {
-    display: flow-root;
-  }
-
-  .headerNavlink {
-    font-weight: 500;
-    padding: 13px 63px;
+.header , .Middle {
+  margin: 0px 15px 0;
 }
 
-  .headerSignup {
-    display: flex;
-    margin-top: -82px;
-    margin-left: 310px;
-  }
-
-  .Container {
-    display: flex;
-    position: relative;
-    max-width: 375px;
-    float: none;
-  }
-
-  .MostPopularHosting {
-    display: inline-flex;
-    margin: 10px;
-
-
-    
+.headerImg {
+  margin-left: 25px;
 }
-@media screen and (min-width:425px) and (max-with:1440px) {
-  .bloc-page {
-    display: 
-    max-width: 
+  
+.headerNav {
+  display: flow-root;
+}
+
+.SearchTitle {
+  padding: 35px 0px 0px;
+}
+
+.headerNavlink {
+  border-top: none;
+  border-bottom: 3px solid #F2F2F2;
+  width: 50%;
+  font-weight: 500;
+  padding: 13px 63px;
+}
+.headerNavlink[data-active=true] {
+  border-bottom-color: #0065FC;
+}
+.headerNavlink:hover {
+  border-bottom-color: #0065FC;
+}
+
+
+.headerSignup {
+  display: flex;
+  margin-top: -82px;
+  margin-left: 310px;
+}
+
+.fa fas-search {
+  font-size: 15px;
+  color: white;
+}
+
+.searchFormInsertbutton {
+  padding: 20px;
+  border-radius: 0 1em 1em 0;
+}
+
+.searchFormInsertSearch {
+  display: none;
+}
+
+
+.searchFiltersTitle {
+  margin-top: -30px;
+}
+
+.searchFilterBoxA {
+  margin-left: -95px;
+}
+
+.Container {
+  display: flex;
+  position: relative;
+  width: 425px;
+  float: none;
+  background-color: #F2F2F2;
+  border-radius: inherit;
+  margin-left: -15px;
+}
+
+.iconline {
+  margin-left: 115px;
+}
+
+.HostingMarseille {
+  background-color: inherit ;
+  height: 629px;
+  width: 890px;
+}
+
+.MostPopularHosting {
+  display: inline-flex;
+  margin-right: 70px;
+  margin-left: 30px;
   }
->>>>>>> Stashed changes
+
+.hostingMarseilleTitle {
+  margin-left: 30px;
+}
+
+.CatalogTop {
+  width: 350px;
+  margin: 10px 30px;
+}
+
+.Catalogpicdimension {
+  width: 349px;
+  height: 109px; 
+  }
+
+.Activity {
+  display: flow-root;
+  margin-top: 920px;
+  padding: 0px 25px;
+}
+
+.ActivityCatalogBoxImg:hover {
+  width: 375px;
+  height: 130px;
+}
+
+.ActivityCatalogBoxImga {
+  width: 375px;
+  height: 130px;
+}
+
+.ActivityCatalogBoxImgb {
+  width: 375px;
+  height: 130px;
+}
+
+.ActivityCatalogBoxImgc {
+  width: 375px;
+  height: 130px;
+}
+
+.ActivityCatalogBoxImgd {
+  width: 375px;
+  height: 130px;
+}
+
+.ActivityCatalogBoxImge {
+  width: 375px;
+  height: 130px;
+}
+
+.ActivityCatalogBoxImgf {
+  width: 375px;
+  height: 130px;
+}
+
+.ActivityCatalogBox {
+  width: 375px;
+}
+
+.anionBox {
+  flex-flow: column;
+}
+
+.anionBoxColumn {
+  width: 60%;
 }
