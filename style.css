@@ -20,19 +20,18 @@ body {
   align-items: center;
 }
 
-.headerNavlink {
+
+.headerNavLink {
   font-weight: 500;
   padding: 1.3em;
 }
 
-.headerNavLink[data-active=true] {
-  color: #0065FC;
-}
-.headerNavLink:hover {
-  color: #0065FC;
-}
-
 @media screen and (min-width:426px) {
+  .headerNavlink {
+    font-weight: 500;
+    padding: 1.3em;
+  }
+
   .headerNavLink[data-active=true] {
     border-top: 3px solid #0065FC;
   }
@@ -58,7 +57,7 @@ a {
 }
 
 
-.Searchform {
+.searchform {
   display: flex;
   width: 348px;
   border: solid 1px #F2F2F2;
@@ -80,7 +79,7 @@ a {
   font-family: 'Raleway';
 }
 .searchFormInsertbutton {
-  padding: 0em 1em;
+  padding: 1em 1em;
   background-color: #0065FC;
   border: none;
   color: white;
@@ -105,7 +104,7 @@ a {
   margin-right: 2em;
   border: 2px solid #d9d9d9;
   border-radius: 2em;
-  margin-top: 1em;
+  margin-top: 0.5em;
   cursor: pointer;
   font-weight: bold;
 }
@@ -149,14 +148,14 @@ a {
   margin-right: 1em;
 }
 
-.Header, .Middle {
+.header, .middle {
   margin-left: 29px;
 }
 
-.Hosting {
+.hosting {
   display: flex;
 }
-.CatalogTop {
+.catalogTop {
   display: inline-block;
   padding: 6px;
   margin: 18px;
@@ -167,7 +166,7 @@ a {
   width: 227px;
   margin-top: 10px;
 }
-.Catalogpicdimension {
+.catalogpicdimension {
   width: 227px;
   height: 120px;
   border-radius: 1em 1em 0 0;
@@ -185,7 +184,7 @@ a {
   margin-top: -15px;
 }
 
-.HostingMarseille {
+.hostingMarseille {
   display: block;
   background-color: #767e8233;
   height: 620px;
@@ -207,11 +206,11 @@ a {
   margin-top: -16px;
 }
 
-.HostingMarseilleStarPop {
+.hostingMarseilleStarPop {
   margin-top: 40px;
 }
 
-.Container {
+.container {
   display: flex;
   position: relative;
   border-radius: 1.5em;
@@ -242,12 +241,12 @@ a {
 .block {
   margin-left: 30px;
 }
-.Iconline {
+.iconline {
   color: black;
   margin-left: 40px;
 }
 
-.MostPopularHostingdimension {
+.mostPopularHostingdimension {
   width: 132px;
   height: 130px;
   border-radius: 1em 0 0 1em;
@@ -255,7 +254,7 @@ a {
   overflow: hidden;
 }
 
-.MostPopularHosting {
+.mostPopularHosting {
   display: flex;
   position: relative;
   padding: 0.5em;
@@ -266,30 +265,30 @@ a {
   margin-top: 25px;
 }
 
-.MostPopularHostingText {
+.mostPopularHostingText {
   display: flex;
   flex-direction: column;
   margin: -20px 0 0 20px;
 }
 
-.Activity {
+.activity {
   display: flex;
   flex-wrap: wrap;
 }
 
-  .ActivityCatalogBox {
+  .activityCatalogBox {
     border-radius: 1em;
     box-shadow: 0 0 15px #0000002e;
 }
 
-.ActivityCatalogBoxImga {
+.activityCatalogBoxImga {
   border-radius: 1em 1em 0 0;
   width: 270px;
   height: 370px;
   object-fit: cover;
   overflow: hidden;
 }
-.ActivityCatalogBoxImgb {
+.activityCatalogBoxImgb {
   border-radius: 1em 1em 0 0;
   width: 270px;
   height: 200px;
@@ -297,7 +296,7 @@ a {
   overflow: hidden;
 }
 
-.ActivityCatalogBoxImgc {
+.activityCatalogBoxImgc {
   border-radius: 1em 1em 0 0;
   width: 270px;
   height: 100px;
@@ -305,7 +304,7 @@ a {
   overflow: hidden;
 }
 
-.ActivityCatalogBoxImgd {
+.activityCatalogBoxImgd {
   border-radius: 1em 1em 0 0;
   width: 280px;
   height: 370px;
@@ -313,7 +312,7 @@ a {
   overflow: hidden;
 }
 
-.ActivityCatalogBoxImge {
+.activityCatalogBoxImge {
   border-radius: 1em 1em 0 0;
   width: 270px;
   height: 150px;
@@ -321,7 +320,7 @@ a {
   overflow: hidden;
 }
 
-.ActivityCatalogBoxImgf {
+.activityCatalogBoxImgf {
   border-radius: 1em 1em 0 0;
   width: 270px;
   height: 130px;
@@ -329,10 +328,12 @@ a {
   overflow: hidden;
 }
 
-.activitycataloga {
+.activitycatalogBoxa {
   margin-right: 20px;
   margin-top: 60px;
   margin-left: -180px;
+  border-radius: 1em;
+  box-shadow: 0 0 15px #0000002e;
 }
 
 .activitycatalogb {
@@ -365,7 +366,7 @@ a {
   margin-left: -300px;
 }
 
-.ActivityCatalogLegend {
+.activityCatalogLegend {
   display: flex;
   justify-content: flex-start;
   margin: 0.2em 1.5em 3em 1em;
@@ -404,7 +405,7 @@ a {
     display: contents ;
   }
 
-.header , .Middle {
+.header , .middle {
   margin: 0px 15px 0;
 }
 
@@ -416,7 +417,7 @@ a {
   display: flow-root;
 }
 
-.SearchTitle {
+.searchTitle {
   padding: 35px 0px 0px;
 }
 
@@ -464,7 +465,7 @@ a {
   margin-left: -95px;
 }
 
-.Container {
+.container {
   display: flex;
   position: relative;
   width: 425px;
@@ -478,13 +479,13 @@ a {
   margin-left: 115px;
 }
 
-.HostingMarseille {
+.hostingMarseille {
   background-color: inherit ;
   height: 629px;
   width: 890px;
 }
 
-.MostPopularHosting {
+.mostPopularHosting {
   display: inline-flex;
   margin-right: 70px;
   margin-left: 30px;
@@ -494,58 +495,58 @@ a {
   margin-left: 30px;
 }
 
-.CatalogTop {
+.catalogTop {
   width: 350px;
   margin: 10px 30px;
 }
 
-.Catalogpicdimension {
+.catalogpicdimension {
   width: 349px;
   height: 109px; 
   }
 
-.Activity {
+.activity {
   display: flow-root;
   margin-top: 920px;
   padding: 0px 25px;
 }
 
-.ActivityCatalogBoxImg:hover {
+.activityCatalogBoxImg:hover {
   width: 375px;
   height: 130px;
 }
 
-.ActivityCatalogBoxImga {
+.activityCatalogBoxImga {
   width: 375px;
   height: 130px;
 }
 
-.ActivityCatalogBoxImgb {
+.activityCatalogBoxImgb {
   width: 375px;
   height: 130px;
 }
 
-.ActivityCatalogBoxImgc {
+.activityCatalogBoxImgc {
   width: 375px;
   height: 130px;
 }
 
-.ActivityCatalogBoxImgd {
+.activityCatalogBoxImgd {
   width: 375px;
   height: 130px;
 }
 
-.ActivityCatalogBoxImge {
+.activityCatalogBoxImge {
   width: 375px;
   height: 130px;
 }
 
-.ActivityCatalogBoxImgf {
+.activityCatalogBoxImgf {
   width: 375px;
   height: 130px;
 }
 
-.ActivityCatalogBox {
+.activityCatalogBox {
   width: 375px;
 }
 
@@ -556,4 +557,5 @@ a {
 .anionBoxColumn {
   width: 60%;
 }
+
 }
