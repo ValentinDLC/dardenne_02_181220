@@ -27,10 +27,7 @@ body {
 }
 
 @media screen and (min-width:426px) {
-  .headerNavlink {
-    font-weight: 500;
-    padding: 1.3em;
-  }
+
 
   .headerNavLink[data-active=true] {
     border-top: 3px solid #0065FC;
@@ -342,7 +339,7 @@ a {
   margin-left: 5px;
 }
 
-.activitycatalogc {
+.activityCatalogc {
   margin-right: 20px;
   margin-top: 330px;
   margin-left: -300px;;
