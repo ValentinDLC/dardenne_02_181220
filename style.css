@@ -4,15 +4,12 @@ body {
 }
 
 .bloc-page {
-  width: 1252.5px;
-  margin: 0 auto;
+  overflow: hidden;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  height: 4em;
-  max-width: 1060px;
 }
 
 .headerNav {
@@ -20,20 +17,24 @@ body {
   align-items: center;
 }
 
+.nav {
+  display: flex;
+}
 
 .headerNavLink {
   font-weight: 500;
   padding: 1.3em;
 }
 
-@media screen and (min-width:426px) {
-
-
+@media screen and (min-width:536px) {
   .headerNavLink[data-active=true] {
     border-top: 3px solid #0065FC;
+    color: #0065FC ;
   }
+
   .headerNavLink:hover {
     border-top: 3px solid #0065FC;
+    color: #0065FC;
   }
 }
 
@@ -45,8 +46,8 @@ a {
 .headerImg {
   width: 115px;
   height: 60px;
-  margin-right: 67%;
 }
+
 .headerSignup {
   padding: 1.4em;
   color: blue;
@@ -75,6 +76,9 @@ a {
   font-weight: 600;
   font-family: 'Raleway';
 }
+::placeholder {
+  color: black;
+}
 .searchFormInsertbutton {
   padding: 1em 1em;
   background-color: #0065FC;
@@ -92,16 +96,17 @@ a {
   padding-top: 30px;
 }
 .searchFiltersTitle {
+  display: flex;
+  align-items: center;
   margin-right: 1em;
 }
 
 .searchFiltersBox {
   display: flex;
   align-items: center;
-  margin-right: 2em;
+  margin: 1em;
   border: 2px solid #d9d9d9;
   border-radius: 2em;
-  margin-top: 0.5em;
   cursor: pointer;
   font-weight: bold;
 }
@@ -115,13 +120,19 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 2em;
-  margin: -2;
+  margin: -2px;
 }
 
-@media screen and (min-width:426px) {
+@media screen and (min-width:536px) {
   .searchFormInsertIcon {
     display: none !important;
   }
+}
+
+.blocCatalog {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .searchFiltersText {
@@ -152,6 +163,7 @@ a {
 .hosting {
   display: flex;
 }
+
 .catalogTop {
   display: inline-block;
   padding: 6px;
@@ -160,9 +172,9 @@ a {
   box-shadow: 0 0 20px #0000002e;
   cursor: pointer;
   background-color: white;
-  width: 227px;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
+
 .catalogpicdimension {
   width: 227px;
   height: 120px;
@@ -184,10 +196,10 @@ a {
 .hostingMarseille {
   display: block;
   background-color: #767e8233;
-  height: 620px;
-  width: 880px;
+  width: 840px;
   border-radius: 2em 2em;
-  margin-right: 20px;
+  margin-right: 40px;
+  
 }
 
 .mostPopularTitle {
@@ -196,7 +208,7 @@ a {
 }
 
 .hostingMarseilleTitle {
-  margin-left: 7px;
+  margin: 25px 15px 0px 25px;
 }
 
 .hostingMarseillePrice {
@@ -209,12 +221,10 @@ a {
 
 .container {
   display: flex;
-  position: relative;
   border-radius: 1.5em;
   padding: 15px;
-  width: 340px;
-  height: 590px;
-  float: right;
+  width: 420px;
+  height: 620px;
   background-color: #767e8233;
 }
 
@@ -225,8 +235,9 @@ a {
   color: rgb(241, 212, 212);
 }
 
-.fas fa-chart-line right {
+.fas fa-chart-line  {
   float: right;
+  color: black;
 }
 
 .hostingMarseilleNext {
@@ -251,6 +262,10 @@ a {
   overflow: hidden;
 }
 
+.mostPopularHostingdimensionBis {
+  width: 200px;
+}
+
 .mostPopularHosting {
   display: flex;
   position: relative;
@@ -268,9 +283,12 @@ a {
   margin: -20px 0 0 20px;
 }
 
-.activity {
+.containerActivity {
   display: flex;
-  flex-wrap: wrap;
+}
+
+.activityTitle {
+  margin: 40px 0px 20px;
 }
 
   .activityCatalogBox {
@@ -281,14 +299,14 @@ a {
 .activityCatalogBoxImga {
   border-radius: 1em 1em 0 0;
   width: 270px;
-  height: 370px;
+  height: 390px;
   object-fit: cover;
   overflow: hidden;
 }
 .activityCatalogBoxImgb {
   border-radius: 1em 1em 0 0;
   width: 270px;
-  height: 200px;
+  height: 195px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -304,15 +322,19 @@ a {
 .activityCatalogBoxImgd {
   border-radius: 1em 1em 0 0;
   width: 280px;
-  height: 370px;
+  height: 390px;
   object-fit: cover;
   overflow: hidden;
+}
+
+.catalogBox {
+  padding-left: 40px;
 }
 
 .activityCatalogBoxImge {
   border-radius: 1em 1em 0 0;
   width: 270px;
-  height: 150px;
+  height: 140px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -320,7 +342,7 @@ a {
 .activityCatalogBoxImgf {
   border-radius: 1em 1em 0 0;
   width: 270px;
-  height: 130px;
+  height: 155px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -333,35 +355,6 @@ a {
   box-shadow: 0 0 15px #0000002e;
 }
 
-.activitycatalogb {
-  margin-right: 30px;
-  margin-top: 60px;
-  margin-left: 5px;
-}
-
-.activityCatalogc {
-  margin-right: 20px;
-  margin-top: 330px;
-  margin-left: -300px;;
-}
-
-.activitycatalogd {
-  margin-right: 30px;
-  margin-top: 60px;
-  margin-left: 5px;
-}
-
-.activitycataloge {
-  margin-right: 30px;
-  margin-top: 60px;
-  margin-left: -5px;
-}
-
-.activitycatalogf {
-  margin-right: 30px;
-  margin-top: 300px;
-  margin-left: -300px;
-}
 
 .activityCatalogLegend {
   display: flex;
@@ -390,8 +383,22 @@ a {
   margin: 7px 0;
 }
 
+@media screen and (max-width:1024px) {
+  .blocCatalog {
+    display: contents;
+  }
 
-@media screen and (min-width:320px) and (max-width:426px) {
+  .container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .containerActivity {
+    display: flow-root;
+  }
+}
+
+@media screen and (max-width:535px) {
   .bloc-page {
     display: flow-root;
     max-width: 425px;
@@ -409,34 +416,33 @@ a {
 .headerImg {
   margin-left: 25px;
 }
-  
-.headerNav {
-  display: flow-root;
+
+.nav {
+  display: contents;
 }
+
 
 .searchTitle {
   padding: 35px 0px 0px;
+  margin-top: 50px;
 }
 
-.headerNavlink {
-  border-top: none;
-  border-bottom: 3px solid #F2F2F2;
+.headerNavLink {
+  padding: 30px 60px;
+  border-top: white;
+  border-bottom: 3px solid #f3c4c4;
   width: 50%;
   font-weight: 500;
-  padding: 13px 63px;
 }
-.headerNavlink[data-active=true] {
+.headerNavLink[data-active=true] {
   border-bottom-color: #0065FC;
+  color: #0065FC;
 }
-.headerNavlink:hover {
-  border-bottom-color: #0065FC;
-}
-
 
 .headerSignup {
   display: flex;
-  margin-top: -82px;
-  margin-left: 310px;
+  margin-top: -145px;
+  margin-left: 295px;
 }
 
 .fa fas-search {
@@ -455,11 +461,19 @@ a {
 
 
 .searchFiltersTitle {
-  margin-top: -30px;
+  margin-top: -70px;
+}
+
+.searchFiltersBox {
+  margin: 6px 16px 6px -5px;
 }
 
 .searchFilterBoxA {
-  margin-left: -95px;
+  margin-left: -80px;
+}
+
+.blocCatalog {
+  display: contents;
 }
 
 .container {
@@ -474,6 +488,11 @@ a {
 
 .iconline {
   margin-left: 115px;
+}
+
+.hosting {
+  justify-content: center;
+  margin-left: 40px;
 }
 
 .hostingMarseille {
@@ -502,49 +521,27 @@ a {
   height: 109px; 
   }
 
+.containerActivity {
+  flex-wrap: wrap;
+}
+
 .activity {
-  display: flow-root;
-  margin-top: 920px;
-  padding: 0px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 797px;
 }
 
-.activityCatalogBoxImg:hover {
-  width: 375px;
-  height: 130px;
+.catalogBox {
+  padding-left: inherit;
 }
 
-.activityCatalogBoxImga {
-  width: 375px;
-  height: 130px;
-}
-
-.activityCatalogBoxImgb {
-  width: 375px;
-  height: 130px;
-}
-
-.activityCatalogBoxImgc {
-  width: 375px;
-  height: 130px;
-}
-
-.activityCatalogBoxImgd {
-  width: 375px;
-  height: 130px;
-}
-
-.activityCatalogBoxImge {
-  width: 375px;
+.activityCatalogBoxImg {
+  width: 350px;
   height: 130px;
 }
 
 .activityCatalogBoxImgf {
-  width: 375px;
-  height: 130px;
-}
-
-.activityCatalogBox {
-  width: 375px;
+  width: 350px;
 }
 
 .anionBox {

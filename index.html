@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr">  
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,13 @@
     <div class="bloc-page">
       <header class="header">
         <img class="headerImg" src="./Img/Logo/Reservia@3x.png" alt="Reservia">
-        <nav class="headerNav">
-          <a class="headerNavLink" href="#hosting" data-active="true" >Hébergement</a>
-          <a class="headerNavLink" href="#activity" data-active="false" >Activités</a>
-        </nav>
-        <a class="headerSignup" href="#">S'inscrire</a>
+        <div class="nav">
+          <nav class="headerNav">
+            <a class="headerNavLink" href="#hosting" data-active="true" >Hébergement</a>
+            <a class="headerNavLink" href="#activity" data-active="false" >Activités</a>
+          </nav>
+          <a class="headerSignup" href="#">S'inscrire</a>
+        </div>  
       </header>
   
       <main class="middle">
@@ -41,7 +43,7 @@
           </form>
   
           <div class="searchFilters">
-            <h2 class="searchFiltersTitle">Filtres</h2>
+            <h3 class="searchFiltersTitle">Filtres</h3>
             <div class="searchFiltersBox searchFilterBoxA">
               <div class="searchFiltersIconbox">
                 <i class="fas fa-money-bill-wave"></i>
@@ -74,53 +76,54 @@
             <p class="searchResultInfo">Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         </section>
-  
+        
+        <aside class="blocCatalog">
           <aside class="container">
             <div class="mostPopular">
-              <h1 class="mostPopularTitle">Les plus populaires <i class="fas fa-chart-line right" style="color: black;"></i></h1>
-              <div class="mostPopularHosting">
-                <img class="mostPopularHostingdimension" src="./Img/Hosting/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt="Un lit en Baldaquine">
-                <div class="mostPopularHostingText">
-                  <h4>Hotel le soleil du matin</h4>
-                  <span class="hostingMarseillePrice">Nuit à partir de 128€</span>
-                  <div class="hostingMarseilleStarPop">
-                    <i class="fas fa-star colorIconStarBlue"></i>
-                    <i class="fas fa-star colorIconStarBlue"></i>
-                    <i class="fas fa-star colorIconStarBlue"></i>
-                    <i class="fas fa-star colorIconStarBlue"></i>
-                    <i class="fas fa-star colorIconStarBlue"></i> 
+              <h1 class="mostPopularTitle">Les plus populaires <i class="fas fa-chart-line"></i></h1>
+                <div class="mostPopularHosting">
+                  <img class="mostPopularHostingdimension" src="./Img/Hosting/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    alt="Un lit en Baldaquine">
+                  <div class="mostPopularHostingText">
+                    <h4>Hotel le soleil du matin</h4>
+                    <span class="hostingMarseillePrice">Nuit à partir de 128€</span>
+                    <div class="hostingMarseilleStarPop">
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarBlue"></i> 
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="mostPopularHosting">
+                  <img class="mostPopularHostingdimension mostPopularHostingdimensionBis" src="./Img/Hosting/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                  <div class="mostPopularHostingText">
+                    <h4>Au coeur de l'eau chambres d'hôtes</h4>
+                    <span class="hostingMarseillePrice">Nuit à partir de 71€</span>
+                    <div class="hostingMarseilleStarPop">
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarBlue"></i>
+                      <i class="fas fa-star colorIconStarWhite"></i>
                   </div>
                 </div>
               </div>
-  
+    
               <div class="mostPopularHosting">
-                <img class="mostPopularHostingdimension" src="./Img/Hosting/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                <img class="mostPopularHostingdimension" src="./Img/Hosting/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                 <div class="mostPopularHostingText">
-                  <h4>Au coeur de l'eau chambres d'hôtes</h4>
-                  <span class="hostingMarseillePrice">Nuit à partir de 71€</span>
+                  <h4>Hôtel tout bleu et Blanc</h4>
+                  <span class="hostingMarseillePrice">Nuit à partir de 68€</span>
                   <div class="hostingMarseilleStarPop">
                     <i class="fas fa-star colorIconStarBlue"></i>
                     <i class="fas fa-star colorIconStarBlue"></i>
                     <i class="fas fa-star colorIconStarBlue"></i>
                     <i class="fas fa-star colorIconStarBlue"></i>
                     <i class="fas fa-star colorIconStarWhite"></i>
-                </div>
               </div>
-            </div>
-  
-            <div class="mostPopularHosting">
-              <img class="mostPopularHostingdimension" src="./Img/Hosting/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
-              <div class="mostPopularHostingText">
-                <h4>Hôtel tout bleu et Blanc</h4>
-                <span class="hostingMarseillePrice">Nuit à partir de 68€</span>
-                <div class="hostingMarseilleStarPop">
-                  <i class="fas fa-star colorIconStarBlue"></i>
-                  <i class="fas fa-star colorIconStarBlue"></i>
-                  <i class="fas fa-star colorIconStarBlue"></i>
-                  <i class="fas fa-star colorIconStarBlue"></i>
-                  <i class="fas fa-star colorIconStarWhite"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -130,6 +133,7 @@
           <div class="hostingMarseille">
             <div class="catalog">
               <h1 class="hostingMarseilleTitle">Hébergement à Marseille</h1>
+              <div class="allHostingMarseille">
               <div class="catalogTop">
                 <div class="catalogpicture">
                   <img class="catalogpicdimension" src="./Img/Hosting/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
@@ -217,60 +221,73 @@
                   <i class="fas fa-star colorIconStarBlue"></i>
                 </div>
                 </div>
+                </div>
               </div>
               <h3 class="hostingMarseilleNext">Afficher plus</h3>
             </div>
           </div>
         </section>
+        </aside>
+         
         
         <section class="activity" id="Activity">
           <h3 class="activityTitle">Activités à Marseille</h3>
-          <a href="#" class="activityCatalog activityCataloga">
-            <div class="activityCatalogBox">
-              <img class="activityCatalogBoxImga" src="./Img/Activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-              <h4 class="activityCatalogLegend">Vieux Port</h4>
+          <div class="containerActivity">
+            <div class="catalogBox> 
+            <a href="#" class="activityCatalog activityCataloga">
+              <div class="activityCatalogBox">
+                <img class="activityCatalogBoxImga activityCatalogBoxImg" src="./Img/Activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                <h4 class="activityCatalogLegend">Vieux Port</h4>
+              </div>
+            </a>
             </div>
-          </a>
-  
-          <a href="#" class="activityCatalog activityCatalogb">
-            <div class="activityCatalogBox">
-              <img class="activityCatalogBoxImgb" src="./Img/Activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt="Fort de Pomègues">
-              <h4 class="activityCatalogLegend">Fort de Pomègues</h4>
+    
+            <div class="catalogBox">
+              <a href="#" class="activityCatalog activityCatalogb">
+                <div class="activityCatalogBox">
+                  <img class="activityCatalogBoxImgb activityCatalogBoxImg" src="./Img/Activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    alt="Fort de Pomègues">
+                  <h4 class="activityCatalogLegend">Fort de Pomègues</h4>
+                </div>
+              </a>
+    
+              <a href="#" class="activityCatalog activityCatalogc">
+                <div class="activityCatalogBox">
+                  <img class="activityCatalogBoxImgc activityCatalogBoxImg" src="./Img/Activity/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    alt="Île du Frioul">
+                  <h4 class="activityCatalogLegend">Île du Frioul</h4>
+                </div>
+              </a>
             </div>
-          </a>
-  
-          <a href="#" class="activityCatalog activityCatalogc">
-            <div class="activityCatalogBox">
-              <img class="activityCatalogBoxImgc" src="./Img/Activity/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                alt="Île du Frioul">
-              <h4 class="activityCatalogLegend">Île du Frioul</h4>
+            
+            <div class="catalogBox">
+              <a href="#" class="activityCatalog activityCatalogd">
+                <div class="activityCatalogBox">
+                  <img class="activityCatalogBoxImgd activityCatalogBoxImg" src="./Img/Activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    alt="Parc National des Calanques">
+                  <h4 class="activityCatalogLegend">Parc National des Calanques</h4>
+                </div>
+              </a>
             </div>
-          </a>
-  
-          <a href="#" class="activityCatalog activityCatalogd">
-            <div class="activityCatalogBox">
-              <img class="activityCatalogBoxImgd" src="./Img/Activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                alt="Parc National des Calanques">
-              <h4 class="activityCatalogLegend">Parc National des Calanques</h4>
+
+            <div class="catalogBox">
+              <a href="#" class="activityCatalog activityCataloge">
+                <div class="activityCatalogBox">
+                  <img class="activityCatalogBoxImge activityCatalogBoxImg" src="./Img/Activity/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  alt="Notre-Dame-de-la-Garde">
+                  <h4 class="activityCatalogLegend">Notre-Dame-de-la-Garde</h4>
+                </div>
+              </a>
+    
+              <a href="#" class="activityCatalog activityCatalogf">
+                <div class="activityCatalogBox">
+                  <img class="activityCatalogBoxImgf" src="./Img/Activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    alt="Parc Longchamp">
+                  <h4 class="activityCatalogLegend">Parc Longchamp</h4>
+                </div>
+              </a>
             </div>
-          </a>
-  
-          <a href="#" class="activityCatalog activityCataloge">
-            <div class="activityCatalogBox">
-              <img class="activityCatalogBoxImge" src="./Img/Activity/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Notre-Dame-de-la-Garde">
-              <h4 class="activityCatalogLegend">Notre-Dame-de-la-Garde</h4>
-            </div>
-          </a>
-  
-          <a href="#" class="activityCatalog activityCatalogf">
-            <div class="activityCatalogBox">
-              <img class="activityCatalogBoxImgf" src="./Img/Activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                alt="Parc Longchamp">
-              <h4 class="activityCatalogLegend">Parc Longchamp</h4>
-            </div>
-          </a>
+          </div>
         </section>
       </main>
   
