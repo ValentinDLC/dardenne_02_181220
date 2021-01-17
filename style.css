@@ -72,13 +72,15 @@ a {
   padding: 1em 1em;
   border: none;
   width: 16em;
-  font-size: medium;
+  font-size: small;
   font-weight: 600;
   font-family: 'Raleway';
 }
+
 ::placeholder {
   color: black;
 }
+
 .searchFormInsertbutton {
   padding: 1em 1em;
   background-color: #0065FC;
@@ -88,6 +90,11 @@ a {
   border-radius: 0 1em 1em 0;
   font-weight: 700;
   font-size: large;
+  cursor: pointer;
+}
+
+.searchFormInsertbutton :hover{
+  color: black;
 }
 
 .searchFilters {
@@ -109,6 +116,16 @@ a {
   border-radius: 2em;
   cursor: pointer;
   font-weight: bold;
+}
+
+.anim {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.anim :hover {
+  box-shadow: 2px 2px 2px 2px #97b9f0;
+  color: #0065FC;
 }
 
 .searchFiltersIconbox  {
@@ -205,6 +222,7 @@ a {
 .mostPopularTitle {
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .hostingMarseilleTitle {
@@ -226,6 +244,7 @@ a {
   width: 420px;
   height: 620px;
   background-color: #767e8233;
+  margin-right: 40px;
 }
 
 .colorIconStarBlue  {
@@ -244,6 +263,7 @@ a {
   display: flex;
   margin-left : 25px;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .block {
@@ -328,7 +348,7 @@ a {
 }
 
 .catalogBox {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .activityCatalogBoxImge {
@@ -391,10 +411,65 @@ a {
   .container {
     flex-direction: column;
     width: auto;
+    height: auto;
   }
 
   .containerActivity {
-    display: flow-root;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mostPopularHostingCatalog {
+    display: flex;
+  }
+
+  .mostPopularHosting {
+    height: 130px;
+    margin: 10px;
+  }
+
+  .hostingMarseilleStarPop {
+    margin-top: 30px;
+  }
+
+  .hostingMarseilleStarPopBis {
+    margin-top: 50px;
+  }
+
+  .mostPopularHostingdimension {
+    width: 200px;
+  }
+
+  .hostingMarseille {
+    width: auto;
+    margin-top: 20px;
+  }
+
+  .catalogTop {
+    margin: 38px;
+  }
+
+  .catalogBox {
+    padding: inherit;
+  }
+
+  .activityCatalogBoxImgd {
+    width: inherit;
+  }
+
+  .activityCatalogBox {
+    margin: 0px 90px;
+    width: 270px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .mostPopularHostingCatalog {
+    display: grid;
+  }
+
+  .activityCatalogBox {
+    margin: 0px 40px;
   }
 }
 
@@ -442,7 +517,7 @@ a {
 .headerSignup {
   display: flex;
   margin-top: -145px;
-  margin-left: 295px;
+  margin-left: 260px;
 }
 
 .fa fas-search {
@@ -460,16 +535,14 @@ a {
 }
 
 
-.searchFiltersTitle {
-  margin-top: -70px;
-}
+
 
 .searchFiltersBox {
   margin: 6px 16px 6px -5px;
 }
 
 .searchFilterBoxA {
-  margin-left: -80px;
+  margin-left: -5px;
 }
 
 .blocCatalog {
@@ -501,10 +574,14 @@ a {
   width: 890px;
 }
 
+.mostPopularTitle {
+  margin-left: -80px;
+}
+
 .mostPopularHosting {
   display: inline-flex;
-  margin-right: 70px;
-  margin-left: 30px;
+  margin-right: 80px;
+  margin-left: 0px;
   }
 
 .hostingMarseilleTitle {
@@ -535,8 +612,13 @@ a {
   padding-left: inherit;
 }
 
+.activityCatalogBox {
+  margin: 0px 0px;
+  width: fit-content;
+}
+
 .activityCatalogBoxImg {
-  width: 350px;
+  width:350px;
   height: 130px;
 }
 
@@ -552,4 +634,9 @@ a {
   width: 60%;
 }
 
+}
+@media screen and (max-width:375px) {
+  .mostPopular {
+    margin: inherit;
+  }
 }
