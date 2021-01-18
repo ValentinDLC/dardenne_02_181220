@@ -514,6 +514,11 @@ a {
   color: #0065FC;
 }
 
+.headerNavLink:hover {
+  border-top-color:#0065FC ;
+  color: #0065FC;
+}
+
 .headerSignup {
   display: flex;
   margin-top: -145px;
@@ -614,7 +619,7 @@ a {
 
 .activityCatalogBox {
   margin: 0px 0px;
-  width: fit-content;
+  width: auto;
 }
 
 .activityCatalogBoxImg {
