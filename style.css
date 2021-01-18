@@ -515,7 +515,7 @@ a {
 }
 
 .headerNavLink:hover {
-  border-top-color:#0065FC ;
+  border-bottom-color:#0065FC ;
   color: #0065FC;
 }
 
